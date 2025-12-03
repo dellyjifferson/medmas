@@ -1,0 +1,310 @@
+/* ======== GLOBAL ======== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2, h3 {
+    text-align: center;
+    color: #275efe;
+    margin-bottom: 20px;
+}
+
+/* ======== FORMS ======== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#search{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #275efe;
+    box-shadow: 0 0 4px rgba(39, 94, 254, 0.3);
+}
+
+/* Buttons */
+.btn {
+    background: #275efe;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #1b47c6;
+}
+.btn_retour {
+    background: #f40404;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn_retour:hover {
+    background: #1b47c6;
+}
+
+/* ======== TABLES ======== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #275efe;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f1f1f1;
+}
+
+/* Links */
+a {
+    color: #275efe;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ======== HEADER ======== */
+.header {
+    background: #275efe;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header a {
+    color: white;
+    margin-left: 15px;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        font-size: 14px;
+    }
+}
+/* ======== LAYOUT ======== */
+
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    height: 100vh;
+    background: #0d6efd;
+            padding: 20px;
+}
+.sidebar a {
+    color: white;
+    display: block;
+    margin: 15px 0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+     background: rgba(255,255,255,0.2);
+}
+
+.sidebar-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #275efe;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.logout {
+    color: white;
+    margin-left: 10px;
+}
+
+.logout:hover {
+    text-decoration: underline;
+}
+/* ======== DARK MODE ======== */
+body.dark {
+    background: #0f1116;
+    color: #e2e2e2;
+}
+
+body.dark .container {
+    background: #1a1d24;
+    color: #e2e2e2;
+    box-shadow: 0 0 8px rgba(255,255,255,0.05);
+}
+
+/* Sidebar */
+body.dark .sidebar {
+    background: #13151a;
+}
+
+body.dark .sidebar a:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Topbar */
+body.dark .topbar {
+    background: #1a73e8;
+}
+
+/* Tables */
+body.dark table {
+    background: #1a1d24;
+    color: #e2e2e2;
+}
+
+body.dark th {
+    background: #1a73e8;
+}
+
+body.dark tr:nth-child(even) {
+    background: #181b20;
+}
+
+/* Inputs */
+body.dark input,
+body.dark select,
+body.dark textarea {
+    background: #181b20;
+    border: 1px solid #444;
+    color: white;
+}
+
+body.dark input:focus,
+body.dark select:focus,
+body.dark textarea:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 4px rgba(26,115,232,0.5);
+}
+
+
+/* Buttons */
+.theme-btn {
+    font-size: 18px;
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+body.dark .btn {
+    background: #1a73e8;
+}
+/* Style pour le bouton dans la sidebar */
+.theme-toggle {
+  margin-bottom: 20px; /* espace en dessous si besoin */
+  background-color: inherit; /* partage le même fond que la sidebar */
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+/* Ajoutez à votre CSS */
+.sidebar {
+  transition: transform 0.3s ease;
+  /* Par défaut, la sidebar est visible */
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+  /* La sidebar glisse vers la gauche pour disparaître */
+}
+.check{
+    display: flex;
+    flex-direction: row;
+}
