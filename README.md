@@ -1,6 +1,9 @@
 # medmas
 MEDMAS stands for Medical Management System
+Light Theme: 
 <img width="1900" height="887" alt="image" src="https://github.com/user-attachments/assets/0048aef9-861a-4b1e-8890-46bacd968954" />
+Dark Theme: 
+
 It's a system coded in PHP, what facilitate the management of medical organisation
 The project is made by the Group 7, ESIH Class 2028 in the year 2025
 This project was completed as an evaluation (an exam).
