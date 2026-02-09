@@ -11,7 +11,8 @@ MEDMAS stands for Medical Management System
     </td>
     <td align="center">
       <strong>Dark Theme</strong><br/>
-      <img width="400" alt="Dark Theme" src="URL_TO_YOUR_DARK_THEME_IMAGE" />
+      <img width="400" alt="Dark Theme" src="https://github.com/user-attachments/assets/5bacbf5f-7fba-471f-a1fa-8023414716e0" />
+" />
     </td>
   </tr>
 </table>
